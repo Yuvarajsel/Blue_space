@@ -86,3 +86,14 @@ nav a {
     color: black;
     margin-bottom: 5px;
 }
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(190, 205, 50);
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: auto;
+    
+}
