@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Blue Space</title>
-
+    <title>About Us - Blue Space</title>
+    
     <style>
         /* General Page Styling */
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body {
             font-family: Arial, sans-serif;
             background-image: url(back.jpg);
             text-align: center;
@@ -41,39 +52,45 @@
             text-decoration: underline;
         }
 
-        /* Portfolio Container */
-        .portfolio-container {
+        /* Main Content */
+        .about-container {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            flex: 1; /* Takes up available space */
             padding: 20px;
         }
 
-        .portfolio-item {
-            width: 300px;
+        .about-box {
+            width: 600px;
+            padding: 20px;
             background-color: white;
             border-radius: 10px;
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-            margin: 15px;
-            padding: 20px;
             text-align: center;
         }
 
-        .portfolio-item img {
-            width: 100%;
-            border-radius: 10px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .portfolio-item h3 {
+        .about-box h2 {
             color: #001f3f;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-        .portfolio-item p {
-            font-size: 14px;
+        .about-box p {
+            font-size: 16px;
             color: black;
+            margin-bottom: 15px;
+        }
+
+        /* List Styling */
+        .about-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about-box ul li {
+            font-size: 16px;
+            color: black;
+            margin-bottom: 5px;
         }
 
         /* Button Styling */
@@ -92,12 +109,21 @@
         .btn:hover {
             background-color: darkblue;
         }
+
+        /* Fixed Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(190, 205, 50);
+            color: #fff;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Our Portfolio</h1>
+        <h1>About Blue Space</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -105,27 +131,26 @@
         </nav>
     </header>
 
-    <section class="portfolio-container">
-        <div class="portfolio-item">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Satellite Exploration</h3>
-            <p>Our latest satellite project providing deep space insights.</p>
-        </div>
-
-        <div class="portfolio-item">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Space Research</h3>
-            <p>Advanced space research on planetary conditions.</p>
-        </div>
-
-        <div class="portfolio-item">
-            <img src="project3.jpg" alt="Project 3">
-            <h3>Galactic Discoveries</h3>
-            <p>Newly discovered exoplanets in distant galaxies.</p>
+    <section class="about-container">
+        <div class="about-box">
+            <h2>Contact Us</h2>
+            <p>For Any Query, Feel Free To Contact Us Anytime</p>
+            <h2>Contact Information</h2>
+            <p>You can also email us or call us on below given details:</p>
+            <ul>
+                <li><b>Address:</b> 186, 3rd floor, near Hotel Galaxy Star, Near Sargam Cinema, Zone-II, Maharana Pratap Nagar, Bhopal, Madhya Pradesh 462011</li>
+                <li><b>Phone:</b> +91 9926 661 418</li>
+                <li><b>Email:</b> bluspace@gmail.com</li>
+                <li><b>Whatsapp:</b> +91 9926 661 418</li>
+            </ul>
+            <a href="index.html" class="btn">Back to Home</a>
         </div>
     </section>
 
-    <a href="index.html" class="btn">Back to Home</a>
+    <!-- Moved Footer Outside Main Content -->
+    <footer>
+        <p>&copy; 2025 Blue Space. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
