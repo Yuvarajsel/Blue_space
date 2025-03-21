@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Blue Space</title>
+
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url(back.jpg);
+            text-align: center;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #001f3f;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Portfolio Container */
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .portfolio-item h3 {
+            color: #001f3f;
+            margin-top: 10px;
+        }
+
+        .portfolio-item p {
+            font-size: 14px;
+            color: black;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #001f3f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Satellite Exploration</h3>
+            <p>Our latest satellite project providing deep space insights.</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Space Research</h3>
+            <p>Advanced space research on planetary conditions.</p>
+        </div>
+
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Galactic Discoveries</h3>
+            <p>Newly discovered exoplanets in distant galaxies.</p>
+        </div>
+    </section>
+
+    <a href="index.html" class="btn">Back to Home</a>
+
+</body>
+</html>
