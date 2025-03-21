@@ -6,12 +6,27 @@
     <title>About Us - Blue Space</title>
     
     <style>
-        /* General Page Styling */
-        body {
+        /* Reset Styles */
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Make sure the page takes full height */
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Body Styling */
+        body {
             font-family: Arial, sans-serif;
             background-image: url(back.jpg);
             text-align: center;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Header Styling */
@@ -41,12 +56,12 @@
             text-decoration: underline;
         }
 
-        /* About Page Box */
+        /* Main Content */
         .about-container {
+            flex: 1; /* Pushes the footer to the bottom */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
             padding: 20px;
         }
 
@@ -92,10 +107,20 @@
             border-radius: 5px;
             font-size: 16px;
             font-weight: bold;
+            margin-top: 10px;
         }
 
         .btn:hover {
             background-color: darkblue;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(190, 205, 50);
+            color: #fff;
+            width: 100%;
         }
     </style>
 </head>
@@ -129,6 +154,11 @@
             <a href="index.html" class="btn">Back to Home</a>
         </div>
     </section>
+
+    <!-- Moved Footer Outside Main Content -->
+    <footer>
+        <p>&copy; 2025 Blue Space. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
